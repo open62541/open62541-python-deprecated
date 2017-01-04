@@ -1,5 +1,7 @@
 # open62541-python
-Python wrapper for the open62541 OPC UA SDK
+Python wrapper for the open62541 OPC UA SDK based on Cython.
+
+The wrapper have been implemented for the need of opua-modeler https://github.com/FreeOpcUa/opcua-modeler and are currently limited to the few methods needed by the modeler.
 
 #Install
 
