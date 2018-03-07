@@ -2,13 +2,13 @@ from threading import Thread
 import time
 from IPython import embed
 
-import openua
+import open62541
 
 
 class UAServer(Thread):
     def __init__(self):
         Thread.__init__(self)
-        self.server = openua.Server()
+        self.server = open62541.Server()
         self.status = None
 
     def run(self):

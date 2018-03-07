@@ -10,7 +10,7 @@ cdef class Server:
         cdef copen62541.UA_ServerConfig* c_conf
         cdef copen62541.UA_Server* c_server
 
-        c_conf = copen62541.UA_ServerConfig_new_default()
+        c_conf = copen62541.UA_ServerConfig_new_minimal(port, NULL)
         c_server = copen62541.UA_Server_new(c_conf)
         self._c_running = True
         with nogil:

@@ -35,6 +35,7 @@ cdef extern from "ua_server.h":
 
 cdef extern from "ua_config_default.h":
     UA_ServerConfig * UA_ServerConfig_new_default();
+    UA_ServerConfig * UA_ServerConfig_new_minimal(uint16_t port, const char *certificate);
 
 cdef extern from "ua_network_tcp.h":
     UA_ServerNetworkLayer UA_ServerNetworkLayerTCP(UA_ConnectionConfig conf, uint16_t port);
