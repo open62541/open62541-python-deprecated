@@ -12,13 +12,13 @@ The wrapper have been implemented for the need of opua-modeler https://github.co
 * mkdir build
 * cmake -DBUILD_SHARED_LIBS=ON -DUA_ENABLE_FULL_NS0 ..
 * make
-* a new file linopen62541.so.0 should have been generated
+* a new file libnopen62541.so.0 should have been generated
 
 * cd ../../
 * git clone https://github.com/open62541/open62541-python.git
 * cd open62541-python
 * python setup.py build_ext --inplace
-* a new file openua.xxx.so should have been generated, rename it to openua.so 
+* a new file openua.xxx.so should have been generated, rename it to open62541.so 
 * export LD_LIBRARY_PATH=../build:$LD_LIBRARY_PATH
 * LD_LIBRARY_PATH, PYTHON_PATH or whatever else is necessary for ld and python binary to find the new modules
 
