@@ -17,7 +17,7 @@ The wrapper have been implemented for the need of opua-modeler https://github.co
 * cd ../../
 * git clone https://github.com/open62541/open62541-python.git
 * cd open62541-python
-* python setup.py build
+* python setup.py build_ext --inplace
 * a new file openua.xxx.so should have been generated, rename it to openua.so 
 * export LD_LIBRARY_PATH=../build:$LD_LIBRARY_PATH
 * LD_LIBRARY_PATH, PYTHON_PATH or whatever else is necessary for ld and python binary to find the new modules
