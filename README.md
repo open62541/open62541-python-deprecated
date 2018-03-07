@@ -9,10 +9,8 @@ The wrapper have been implemented for the need of opua-modeler https://github.co
 * git clone https://github.com/open62541/open62541.git
 * cd open6541
 * Set following options in CMakeList.txt
-** shared library on (required)
-** Generate nodeset???
 * mkdir build
-* cmake ..
+* cmake -DBUILD_SHARED_LIBS=ON -DUA_ENABLE_FULL_NS0 ..
 * make
 * a new file linopen62541.so.0 should have been generated
 
