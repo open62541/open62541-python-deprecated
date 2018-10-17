@@ -8,9 +8,11 @@ The wrapper have been implemented for the need of opua-modeler https://github.co
 
 * git clone https://github.com/open62541/open62541.git
 * cd open6541
-* Set following options in CMakeList.txt
+* git checkout 0.3
+* git submodule update
 * mkdir build
-* cmake -DBUILD_SHARED_LIBS=ON -DUA_ENABLE_FULL_NS0 ..
+* cd build
+* cmake -DBUILD_SHARED_LIBS=ON -DUA_ENABLE_FULL_NS0=ON ..
 * make
 * a new file libnopen62541.so.0 should have been generated
 
